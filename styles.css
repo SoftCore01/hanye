@@ -16,8 +16,7 @@ p {
     font-size: calc(1.2rem + 0.5vw);
     line-height: 1.8rem;
     color: white;
-    padding: 15vh 5vw;
-    color: #bfebe3;
+    padding: 10vh 5vw;
     opacity: 0;
 }
 

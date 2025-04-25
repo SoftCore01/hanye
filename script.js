@@ -75,7 +75,7 @@ document.addEventListener("click", function (e) {
   audio.play();
 });
 
-document.addEventListener("click", startTransition)
+window.addEventListener("click", startTransition)
 
 // Text entrance animation
 gsap.from(".birthday-text", {
@@ -93,8 +93,8 @@ function transition () {
     const happyBirthday = document.querySelector(".birthday-text");
     const birthdayMessage = document.querySelector(".birthday-wishes");
     if (nOpacity > 0){
-        nOpacity -= 0.1
-        pOpacity += 0.1
+        nOpacity -= 0.05
+        pOpacity += 0.05
         happyBirthday.style.opacity = String(nOpacity);
         birthdayMessage.style.opacity = String(pOpacity);
     } else {
