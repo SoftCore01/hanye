@@ -92,10 +92,12 @@ let pOpacity = 0;
 function transition () {
     const happyBirthday = document.querySelector(".birthday-text");
     const birthdayMessage = document.querySelector(".birthday-wishes");
+    const see = document.querySelector("#message");
     if (nOpacity > 0){
         nOpacity -= 0.05
         pOpacity += 0.05
         happyBirthday.style.opacity = String(nOpacity);
+        see.style.opacity = String(nOpacity)
         birthdayMessage.style.opacity = String(pOpacity);
     } else {
         clearInterval(transitionId)

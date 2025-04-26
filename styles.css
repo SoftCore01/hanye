@@ -13,6 +13,7 @@ body {
 }
 
 p {
+    text-align: justify;
     font-size: calc(1rem + 0.2vw);
     color: white;
     padding: 1vh 5vw;
